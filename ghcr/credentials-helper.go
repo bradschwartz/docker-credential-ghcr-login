@@ -33,7 +33,14 @@ func (ghcr Ghcr) Get(serverURL string) (string, string, error) {
 	if err != nil {
 		return "", "", err
 	}
+
+	// When pushing to public GitHub, the registry domain is `ghcr.io`
+	// We need to map from that (e.g. in docker.config) to what `gh` knows about
+	// TODO: Enable a config file for custom mappings for enterprise
 	hostname := registryurl.GetHostname(url)
+	if hostname == "ghcr.io" {
+		hostname = "github.com"
+	}
 	token, _ := auth.TokenForHost(hostname)
 
 	config, err := config.Read()
@@ -41,7 +48,7 @@ func (ghcr Ghcr) Get(serverURL string) (string, string, error) {
 		return "", "", err
 	}
 
-	username, err := config.Get([]string{hostname, "user"})
+	username, err := config.Get([]string{"hosts", hostname, "user"})
 	if err != nil {
 		return "", "", err
 	}
