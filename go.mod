@@ -5,6 +5,7 @@ go 1.20
 require (
 	github.com/cli/cli/v2 v2.24.3
 	github.com/cli/go-gh v1.2.1
+	github.com/docker/docker-credential-helpers v0.7.0
 )
 
 require (

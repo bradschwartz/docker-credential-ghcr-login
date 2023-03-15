@@ -16,6 +16,10 @@ Uses your GitHub username/password to create a personal access token. Uses the [
 utilities to ensure the PAT has `write:packages` access. If it does not, it will
 run the web-auth flow from the CLI and overwrite the existing token.
 
+Once that is finished, we just rely on the `gh` configuration files as the source
+of truth for a username and token, and provide that to the docker daemon
+when requested.
+
 # Configuration
 
 Add this as a `credsHelper` in your Docker CLI Config:
