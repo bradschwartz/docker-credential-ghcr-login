@@ -1,6 +1,6 @@
 # GitHub Container Registry Credential Helper
 
-A tool to manage short-lived personal access tokens (PATs) for individuals
+A tool to manage auth with personal access tokens (PATs) for individuals
 to authenticate to GitHub Container Registry and push images. Probably
 not meant for production workloads, as Actions will generate a short-lived
 token for each job.
