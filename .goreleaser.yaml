@@ -1,0 +1,35 @@
+version: 2
+
+project_name: docker-credential-ghcr-login
+
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: docker-credential-ghcr-login
+    main: .
+    binary: docker-credential-ghcr-login
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w -X main.version={{.Version}}
+
+archives:
+  - id: default
+    formats:
+      - tar.gz
+    format_overrides:
+      - goos: windows
+        formats:
+          - zip
+
+checksum:
+  name_template: checksums.txt
