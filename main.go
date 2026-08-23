@@ -13,7 +13,7 @@ import (
 
 var (
 	version        string
-	requiredScopes = "read:packages,repo,read:org"
+	requiredScopes = "write:packages"
 	hostname       = "github.com"
 )
 
