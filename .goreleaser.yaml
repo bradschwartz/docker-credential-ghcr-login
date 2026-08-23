@@ -20,7 +20,12 @@ builds:
       - amd64
       - arm64
     ldflags:
-      - -s -w -X main.version={{.Version}}
+      - -s -w
+      - -X main.version={{.Version}}
+      - -X github.com/docker/docker-credential-helpers/credentials.Name={{.ProjectName}}
+      - -X github.com/docker/docker-credential-helpers/credentials.Package=github.com/bradschwartz/docker-credential-ghcr-login
+      - -X github.com/docker/docker-credential-helpers/credentials.Version={{.Version}}
+      - -X github.com/docker/docker-credential-helpers/credentials.Revision={{.ShortCommit}}
 
 archives:
   - id: default
