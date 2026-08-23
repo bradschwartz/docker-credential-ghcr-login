@@ -27,8 +27,19 @@ Add this as a `credsHelper` in your Docker CLI Config:
 ```json
 // $HOME/.docker/config.json
 {
-  "credsHelper": {
+  "credHelpers": {
     "ghcr.io": "ghcr-login"
   }
 }
+```
+
+## Testing
+
+Build like: `go build -o docker-credential-ghcr-login main.go`.
+
+```bash
+$ echo "https://ghcr.io" | ./docker-credential-ghcr-login get
+{"ServerURL":"https://ghcr.io","Username":"xxx","Secret":"gho_xxx"}
+$ ./docker-credential-ghcr-login list
+{"github.com":"xxx"}
 ```
