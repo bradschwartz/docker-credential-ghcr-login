@@ -3,15 +3,15 @@ module github.com/bradschwartz/docker-credential-ghcr-login
 go 1.26.0
 
 require (
-	github.com/cli/cli/v2 v2.98.0
+	github.com/cli/cli/v2 v2.99.0
 	github.com/cli/go-gh v1.2.1
 	github.com/cli/oauth v1.2.2
 	github.com/docker/docker-credential-helpers v0.9.9
 )
 
 require (
-	charm.land/bubbles/v2 v2.1.1 // indirect
-	charm.land/bubbletea/v2 v2.0.8 // indirect
+	charm.land/bubbles/v2 v2.2.1 // indirect
+	charm.land/bubbletea/v2 v2.0.9 // indirect
 	charm.land/huh/v2 v2.0.3 // indirect
 	charm.land/lipgloss/v2 v2.0.6 // indirect
 	dario.cat/mergo v1.0.2 // indirect
@@ -55,7 +55,7 @@ require (
 	github.com/lucasb-eyer/go-colorful v1.4.1 // indirect
 	github.com/mattn/go-colorable v0.1.15 // indirect
 	github.com/mattn/go-isatty v0.0.24 // indirect
-	github.com/mattn/go-runewidth v0.0.24 // indirect
+	github.com/mattn/go-runewidth v0.0.27 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/mitchellh/copystructure v1.2.0 // indirect
 	github.com/mitchellh/hashstructure/v2 v2.0.2 // indirect
