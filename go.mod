@@ -3,7 +3,7 @@ module github.com/bradschwartz/docker-credential-ghcr-login
 go 1.27.0
 
 require (
-	github.com/cli/cli/v2 v2.101.0
+	github.com/cli/cli/v2 v2.102.0
 	github.com/cli/go-gh v1.2.1
 	github.com/cli/oauth v1.2.2
 	github.com/docker/docker-credential-helpers v0.9.9
@@ -11,7 +11,7 @@ require (
 
 require (
 	charm.land/bubbles/v2 v2.2.1 // indirect
-	charm.land/bubbletea/v2 v2.0.9 // indirect
+	charm.land/bubbletea/v2 v2.0.10 // indirect
 	charm.land/huh/v2 v2.0.3 // indirect
 	charm.land/lipgloss/v2 v2.0.6 // indirect
 	dario.cat/mergo v1.0.2 // indirect
