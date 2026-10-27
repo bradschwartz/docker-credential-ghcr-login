@@ -6,7 +6,7 @@ require (
 	github.com/cli/cli/v2 v2.102.1
 	github.com/cli/go-gh v1.2.1
 	github.com/cli/oauth v1.3.0
-	github.com/docker/docker-credential-helpers v0.9.10
+	github.com/docker/docker-credential-helpers v0.9.12
 )
 
 require (
