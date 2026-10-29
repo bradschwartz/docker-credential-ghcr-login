@@ -3,7 +3,7 @@ module github.com/bradschwartz/docker-credential-ghcr-login
 go 1.27.0
 
 require (
-	github.com/cli/cli/v2 v2.103.2
+	github.com/cli/cli/v2 v2.103.3
 	github.com/cli/go-gh v1.2.1
 	github.com/cli/oauth v1.3.0
 	github.com/docker/docker-credential-helpers v0.9.12

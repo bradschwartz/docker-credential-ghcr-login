@@ -56,8 +56,8 @@ github.com/charmbracelet/x/xpty v0.1.3 h1:eGSitii4suhzrISYH50ZfufV3v085BXQwIytcO
 github.com/charmbracelet/x/xpty v0.1.3/go.mod h1:poPYpWuLDBFCKmKLDnhBp51ATa0ooD8FhypRwEFtH3Y=
 github.com/cli/browser v1.3.0 h1:LejqCrpWr+1pRqmEPDGnTZOjsMe7sehifLynZJuqJpo=
 github.com/cli/browser v1.3.0/go.mod h1:HH8s+fOAxjhQoBUAsKuPCbqUuxZDhQ2/aD+SzsEfBTk=
-github.com/cli/cli/v2 v2.103.2 h1:FfS9tCch+UQMiX20RdAfv6QCZ1fmvixPy1qdIMpjHxE=
-github.com/cli/cli/v2 v2.103.2/go.mod h1:Z9vL4bFrEfOM7VDixVr5PgNtKvDEOc7clWhuXBeX/xk=
+github.com/cli/cli/v2 v2.103.3 h1:m+r+e8mWixbrj/DomGY3+1nbne3VpXAsQ1y+y7BngBQ=
+github.com/cli/cli/v2 v2.103.3/go.mod h1:Z9vL4bFrEfOM7VDixVr5PgNtKvDEOc7clWhuXBeX/xk=
 github.com/cli/go-gh v1.2.1 h1:xFrjejSsgPiwXFP6VYynKWwxLQcNJy3Twbu82ZDlR/o=
 github.com/cli/go-gh v1.2.1/go.mod h1:Jxk8X+TCO4Ui/GarwY9tByWm/8zp4jJktzVZNlTW5VM=
 github.com/cli/go-gh/v2 v2.17.0 h1:F24s1Ow/6pgWO0FXXSTi7l4YLkcuS94XPv7npEGkrQc=
